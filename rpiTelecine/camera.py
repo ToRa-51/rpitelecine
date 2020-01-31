@@ -59,7 +59,7 @@ class TelecineCamera( PiCamera ):
     def __init__(self):
         super(TelecineCamera, self).__init__(sensor_mode=2)
         # Fixed settings
-        self.resolution = self.MAX_IMAGE_RESOLUTION # 2592x1944
+        self.resolution = self.MAX_RESOLUTION # 2592x1944
         self.framerate = 15              # Maximum allowed for full frame stills/preview/video 
         self.iso=100                     # Fix ISO for minimum sensor gain
         self.image_denoise=False         # Switch off image denoise - speeds up capture and retains detail in image
