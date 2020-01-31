@@ -286,7 +286,7 @@ if __name__ == '__main__':
     parse_commandline()
     cnf.read_configfile(job_name)
     brackets = brackets or cnf.brackets
-    pf.init( filmType=cnf.film_type, imageSize=cam.MAX_IMAGE_RESOLUTION,
+    pf.init( filmType=cnf.film_type, imageSize=cam.MAX_RESOLUTION,
                     expectedSize=cnf.perf_size, cx=cnf.perf_cx )
     try:
 	pf.setROI()
