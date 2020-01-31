@@ -69,7 +69,7 @@ Home	Nudge motor forward
 End	Nudge motor backward
 1-4	Display reduction (1 full size, 4 quarter size)"""
 
-scale_display = 3
+scale_display = 4
 
 saving = False
 
@@ -443,7 +443,7 @@ if __name__ == '__main__':
 	print('Super 8 film chosen')
 	cnf.film_type = 'super8'
     if cnf.perf_size:
-        pf.init( filmType=cnf.film_type, imageSize=cam.MAX_IMAGE_RESOLUTION,
+        pf.init( filmType=cnf.film_type, imageSize=cam.MAX_RESOLUTION,
                     expectedSize=cnf.perf_size, cx=cnf.perf_cx )
     else:
         pf.setFilmType(cnf.film_type)
