@@ -63,8 +63,8 @@ def display_shadow_text(img,x,y,text):
     text_shadow = (0,0,0)
     text_pos = (x,y)
     shadow_pos = (x+1,y+1)
-    cv2.putText(img, text, shadow_pos, cv2.FONT_HERSHEY_PLAIN, 1.25, text_shadow, thickness=1, lineType=cv2.CV_AA)
-    cv2.putText(img, text, text_pos, cv2.FONT_HERSHEY_PLAIN, 1.25, text_color, thickness=1, lineType=cv2.CV_AA)
+    cv2.putText(img, text, shadow_pos, cv2.FONT_HERSHEY_PLAIN, 1.25, text_shadow, thickness=1, lineType=cv2.LINE_AA)
+    cv2.putText(img, text, text_pos, cv2.FONT_HERSHEY_PLAIN, 1.25, text_color, thickness=1, lineType=cv2.LINE_AA)
     return img
 
 def display_image(window_name,img,reduction=2, text=''):
