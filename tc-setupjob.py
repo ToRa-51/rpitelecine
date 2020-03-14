@@ -69,7 +69,7 @@ Home	Nudge motor forward
 End	Nudge motor backward
 1-4	Display reduction (1 full size, 4 quarter size)"""
 
-scale_display = 3
+scale_display = 4
 
 saving = False
 
